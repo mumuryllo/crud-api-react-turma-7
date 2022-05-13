@@ -1,9 +1,11 @@
 import React from "react"
-import { Switch, Route} from "react-router-dom"
+import { Switch, Route } from "react-router-dom"
 
 import Home from './pages/Home'
 import About from './pages/About'
 import RegisterCustomer from './pages/RegisterCustomer'
+import ListCustomer from './pages/ListCustomer'
+
 import NotFound from './pages/NotFound'
 
 export const Routes = () => {
@@ -13,8 +15,7 @@ export const Routes = () => {
             <Route path="/home" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/register" component={RegisterCustomer} />
-            <Route path="/listcustomer" component={NotFound} />
-            <Route path="/editcustomer/:id" component={NotFound} />
+            <Route path="/listcustomer" component={ListCustomer} />
             <Route component={NotFound} />
         </Switch>
     )
